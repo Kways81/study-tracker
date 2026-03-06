@@ -1,0 +1,192 @@
+.timer-page {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.timer-page h1 {
+  margin: 0 0 0.25rem 0;
+}
+
+.timer-mode {
+  color: var(--text-muted);
+  margin: 0 0 1.5rem 0;
+}
+
+.timer-subject,
+.timer-notes {
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timer-subject label,
+.timer-notes label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-muted);
+}
+
+.timer-subject select,
+.timer-subject .subject-dropdown-trigger,
+.timer-notes input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+.subject-dropdown {
+  position: relative;
+}
+
+.subject-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.subject-dropdown-trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.subject-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.subject-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0.25rem 0 0 0;
+  padding: 0.25rem;
+  list-style: none;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.subject-dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.subject-dropdown-option:hover,
+.subject-dropdown-option.selected {
+  background: var(--input-bg);
+}
+
+.timer-progress-bar {
+  width: 100%;
+  max-width: 300px;
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 1rem auto 0;
+}
+
+.timer-progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 4px;
+  transition: width 1s linear;
+}
+
+.timer-progress-bar.break .timer-progress-fill {
+  background: #22c55e;
+}
+
+.timer-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  border: 6px solid var(--border);
+}
+
+.timer-circle.work {
+  border-color: var(--primary);
+}
+
+.timer-circle.break {
+  border-color: #22c55e;
+}
+
+.timer-display {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.timer-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.timer-btn.start {
+  background: var(--primary);
+  color: white;
+}
+
+.timer-btn.pause {
+  background: #f59e0b;
+  color: white;
+}
+
+.timer-btn.reset {
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.timer-btn:hover {
+  opacity: 0.9;
+}
+
+.timer-hint {
+  margin-top: 2rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.timer-hint a {
+  color: var(--primary);
+}

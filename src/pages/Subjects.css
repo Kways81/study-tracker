@@ -1,0 +1,130 @@
+.subjects-page h1 {
+  margin: 0 0 0.25rem 0;
+}
+
+.subjects-desc {
+  color: var(--text-muted);
+  margin: 0 0 1.5rem 0;
+}
+
+.subjects-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.subjects-form input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+.subjects-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.color-picker {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.color-option {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.color-option.active {
+  border-color: var(--text);
+}
+
+.subjects-form button[type="submit"] {
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.subjects-form button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+.subjects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subject-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.subject-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.subject-name {
+  flex: 1;
+}
+
+.subject-item input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+.subject-item button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.subject-item .edit {
+  background: var(--primary);
+  color: white;
+}
+
+.subject-item .cancel {
+  background: var(--card-bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.subject-item .delete {
+  background: #ef4444;
+  color: white;
+}
+
+.subject-item button:hover {
+  opacity: 0.9;
+}
+
+.subjects-empty {
+  color: var(--text-muted);
+}

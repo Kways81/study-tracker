@@ -1,0 +1,99 @@
+.dashboard h1 {
+  margin: 0 0 0.25rem 0;
+}
+
+.dashboard .welcome {
+  color: var(--text-muted);
+  margin: 0 0 2rem 0;
+}
+
+.dashboard .loading {
+  color: var(--text-muted);
+}
+
+.dashboard .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.dashboard .quick-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.quick-link {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.quick-link:hover {
+  opacity: 0.9;
+}
+
+.recent-sessions {
+  margin-bottom: 2rem;
+}
+
+.recent-sessions h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem 0;
+  color: var(--text-muted);
+}
+
+.sessions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.session-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.session-subject {
+  font-weight: 500;
+}
+
+.session-duration {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.session-date {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
